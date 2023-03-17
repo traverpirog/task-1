@@ -1,14 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    
+    <div class="catalog">
+        <div class="container">
+            <h2 class="title">Шок цены</h2>
+            <div class="row g-3 gy-lg-5">
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="catalog-item">
+                        <div class="catalog-item__top">
+                            <a href="/" class="catalog-item__img">
+                                <img src="/images/card-1.webp" alt="Макаронные изделия Шебекинские спагетти" title="Макаронные изделия Шебекинские спагетти">
+                            </a>
+                            <div class="catalog-item__top-buttons">
+                                <button class="catalog-item__top-button catalog-item__top-button--favorite" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/favorite.svg" alt="favorite" title="В избранное">
+                                </button>
+                                <button class="catalog-item__top-button catalog-item__top-button--compare" data-bs-toggle="tooltip" data-bs-placement="top" title="Подсказка вверху">
+                                    <img src="/images/compare.svg" alt="compare" title="В сравнение">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog-item__price">
+                            <div class="catalog-item__price-discount">-18%</div>
+                            <div class="catalog-item__price-new">
+                                <div class="catalog-item__price-new__value">49 ₽</div>
+                                <div class="catalog-item__cashback">
+                                    <div class="catalog-item__cashback-percent">50%</div>
+                                    <div class="catalog-item__cashback-value">25</div>
+                                    <div class="catalog-item__cashback-icon">
+                                        <img src="/images/spasibo.svg" alt="СберСпасибо" title="СберСпасибо">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-item__price-old">
+                                <div class="catalog-item__price-old__value">60 ₽</div>
+                                <div class="catalog-item__price-old__caption">Скидка продавца</div>
+                                <button type="button" class="catalog-item__price-old__tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                    <img src="/images/information.svg" alt="Скидка продавца" title="На основании данных продавца Умный ритейл Москва (со склада СберМегаМаркет)">
+                                </button>
+                            </div>
+                        </div>
+                        <a href="/" class="catalog-item__name">Макаронные изделия Шебекинские спагетти тонкие 450 г</a>
+                            <div class="catalog-item__rating">
+                                <div class="catalog-item__stars">
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                    <div class="catalog-item__star"></div>
+                                </div>
+                                <div class="catalog-item__rating-value">901</div>
+                            </div>
+                            <button class="button catalog-item__buy">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
-</body> 
+</body>
+
 </html>
